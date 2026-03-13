@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header-card">
+            <div class="time" id="currentTime">10:45:22</div>
+            <div class="date" id="currentDate">Tuesday, January 27, 2026</div>
+            <div class="greeting" id="greeting">Good Morning</div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="main-grid">
+            <!-- Focus Timer -->
+            <div class="card timer-card">
+                <h2>Focus Timer</h2>
+                <div class="timer-display" id="timerDisplay">25:00</div>
+                <div class="timer-controls">
+                    <button class="btn btn-primary" id="startBtn">Start</button>
+                    <button class="btn btn-secondary" id="stopBtn">Stop</button>
+                    <button class="btn btn-secondary" id="resetBtn">Reset</button>
+                </div>
+            </div>
+
+            <!-- Tasks -->
+            <div class="card tasks-card">
+                <h2>Tasks</h2>
+                <div class="task-input">
+                    <input type="text" id="taskInput" placeholder="Add a new task...">
+                    <button class="btn btn-primary" id="addTaskBtn">Add</button>
+                </div>
+                <div class="task-list" id="taskList"></div>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="card links-card">
+            <h2>Quick Links</h2>
+            <div class="link-input">
+                <input type="text" id="linkName" placeholder="Link name">
+                <input type="text" id="linkUrl" placeholder="URL">
+                <button class="btn btn-primary" id="addLinkBtn">Add Link</button>
+            </div>
+            <div class="links-container" id="linksContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
